@@ -1,0 +1,22 @@
+{
+  "name": "phase-1-project-legit-drivers",
+  "version": "1.0.0",
+  "description": "Fake Rest API",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Genevive-Mbesi/Phase-1-project-LeGiT-Drivers.git"
+  },
+  "author": "Genevive Mbesi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Genevive-Mbesi/Phase-1-project-LeGiT-Drivers/issues"
+  },
+  "homepage": "https://github.com/Genevive-Mbesi/Phase-1-project-LeGiT-Drivers#readme",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  }
+}
