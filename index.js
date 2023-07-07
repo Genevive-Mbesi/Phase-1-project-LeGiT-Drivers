@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   // Fetch user data from the specified URL and process it
   function getData() {
-    fetch('http://localhost:3000/users')
+    fetch('https://legit-api.onrender.com/users')
       .then(res => res.json())
       .then(usersData => usersData.forEach(createUserCard));
   }
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
     alert('Selection is successful');
   }
   
-  // Handle button clicks for the like button
+  // Handle button clicks for the like button 
   function handleLikeButtonClick(button) {
     button.textContent = 'Liked';
   }
