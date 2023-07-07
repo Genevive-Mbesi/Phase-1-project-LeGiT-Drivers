@@ -1,16 +1,17 @@
+// Execute the following code when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     getData();
   
     const userList = document.getElementById('user-list');
     userList.addEventListener('click', handleButtonClick);
   });
-  
+  // Fetch user data from the specified URL and process it
   function getData() {
     fetch('http://localhost:3000/users')
       .then(res => res.json())
       .then(usersData => usersData.forEach(createUserCard));
   }
-  
+  // Create a user card element based on the provided user data
   function createUserCard(users) {
     let usersList = document.getElementById('user-list');
     let userDetails = document.createElement('div');
@@ -26,11 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
         <button class="submit" data-id="${users.id}">Submit</button>
         <button class="like" data-id="${users.id}">Like</button>
       </div>
-    `;
+    `;// Set the HTML content of the user card element
   }
   
+// Handle button clicks within the user-list element
   function handleButtonClick(event) {
     const target = event.target;
+
   
     if (target.classList.contains('submit')) {
       handleFormSubmit(target);
@@ -38,13 +41,16 @@ document.addEventListener('DOMContentLoaded', function() {
       handleLikeButtonClick(target);
     }
   }
-  
+
+  // Handle form submission for the submit button
   function handleFormSubmit(button) {
     button.textContent = 'Submitted';
     alert('Selection is successful');
   }
   
+  // Handle button clicks for the like button
   function handleLikeButtonClick(button) {
     button.textContent = 'Liked';
   }
+  
   

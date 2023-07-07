@@ -25,5 +25,44 @@
     transition: .3s;
   }
   .user-card img {
-    max-width: 10%;
+    max-width: 35%;
+  }
+  #user-list{
+    display: flex;
+    margin-left: 170px;
+
+
+  }
+  
+  .user-card {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    
+  }
+#intro {
+    text-align: center;
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
+body {
+    background-color:rgb(98, 98, 119);
+    color: #f8f8f8;
+  }
+  
+  .company nav ul li a {
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .user-card {
+    background-color: white;
+    color: rgb(150, 11, 80);
   }
